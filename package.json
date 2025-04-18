@@ -1,5 +1,5 @@
 {
-  "name": "",
+  "name": "chepas",
   "type": "module",
   "version": "0.0.1",
   "scripts": {
@@ -9,6 +9,16 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^5.7.4"
+    "@astrojs/react": "^4.2.4",
+    "@fontsource/fredoka-one": "^5.2.5",
+    "@fontsource/nunito": "^5.2.5",
+    "@fontsource/pacifico": "^5.2.5",
+    "@tailwindcss/vite": "^4.1.4",
+    "@types/react": "^19.1.2",
+    "@types/react-dom": "^19.1.2",
+    "astro": "^5.7.4",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "tailwindcss": "^4.1.4"
   }
 }

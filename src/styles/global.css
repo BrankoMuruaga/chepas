@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+    --color-burning-orange-400: #FF702C;
+    --color-burning-orange-300: #FFA871;
+
+    --color-web-orange-50: #FFF9EB;
+    --color-web-orange-100: #FDEEC8;
+    --color-web-orange-400: #F8A519;
+
+    --color-nutmeg-wood-800: #874f0c;
+    --color-nutmeg-wood-900: #693B0F;
+}
+
+.text-title{
+    font-family: 'Fredoka One', system-ui;
+    text-align: center;
+    text-wrap: balance;
+}
+
+.text-styled{
+    font-family: 'Pacifico', cursive;
+    text-align: center;
+    text-wrap: balance;
+}
+
+.text-subtitle{
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+    text-wrap: balance;
+}
+
+html,
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+    background-color: var(--color-burning-orange-400);
+}
