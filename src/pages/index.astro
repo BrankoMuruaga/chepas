@@ -1,9 +1,20 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import Hero from "../UI/Hero.tsx";
+import Ingredientes from "../UI/Ingredientes.tsx";
+import Entregas from "../UI/Entregas.tsx";
+import Pagos from "../UI/Pagos.tsx";
+import Contacto from "../UI/Contacto.tsx";
+import Footer from "../UI/Footer.tsx";
+import Navbar from "../components/Navbar";
 ---
 
 <Layout>
-  <main>
-    <p class="text-styled">Chepas</p>
-  </main>
+  <Navbar />
+  <Hero />
+  <Ingredientes />
+  <Entregas />
+  <Pagos />
+  <Contacto />
+  <Footer />
 </Layout>
