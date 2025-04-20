@@ -26,6 +26,10 @@ function Ingredientes({ id }: { id: string }) {
             />
           </svg>
         </span>
+        {/* <img
+          src="/images/linea-ingredientes.svg"
+          className=" pointer-events-none absolute -z-10 w-screen"
+        /> */}
         <div className="grid grid-cols-4 grid-rows-2 gap-4 justify-items-center items-center w-full">
           {ingredientes.map((ingrediente) => (
             <span

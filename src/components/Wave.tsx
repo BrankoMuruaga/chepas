@@ -1,10 +1,19 @@
-function Wave({ fill, height }: { fill?: string; height?: string }) {
+function Wave({
+  fill,
+  height,
+  className,
+  ...props
+}: {
+  fill?: string;
+  height?: string;
+  className?: string;
+}) {
   const containerClasses =
-    "absolute bottom-0 left-0 w-full overflow-hidden -scale-x-100";
+    "absolute bottom-0 left-0 w-full overflow-hidden -scale-x-100" + className;
   const svgClasses = "relative block w-[150%] h-[13rem] -translate-x-[5%]";
 
   return (
-    <div className={containerClasses}>
+    <div className={containerClasses} {...props}>
       <svg
         data-name="Layer 1"
         xmlns="http://www.w3.org/2000/svg"

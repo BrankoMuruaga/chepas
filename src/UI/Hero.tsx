@@ -1,10 +1,9 @@
-import Logo from "../components/Logo";
 import Button from "../components/Button";
-import Wave from "../components/Wave";
+import Logo from "../components/Logo";
 
 function Hero() {
   return (
-    <header className="relative bg-web-orange-400 w-full min-h-screen flex flex-col justify-center">
+    <header className="relative w-full min-h-screen flex flex-col justify-center">
       <section className="flex gap-5">
         <section className="relative z-10 w-1/2 flex justify-center items-center">
           <Logo className="sm:h-max absolute " />
@@ -27,7 +26,10 @@ function Hero() {
           ></Button>
         </section>
       </section>
-      <Wave fill="fill-burning-orange-400" height="13rem" />
+      <img
+        src="/images/wave-hero.svg"
+        className="w-screen absolute -z-10 -top-24 object-cover"
+      />
     </header>
   );
 }

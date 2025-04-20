@@ -37,7 +37,7 @@ export const ingredientes: Ingrediente[] = [
     image: "/images/fecula de mandioca.png",
     descripcion:
       "La fécula de mandioca es la base de la chipa, aportando su textura característica y sabor único.",
-    position: "translate-x-40 -translate-y-2",
+    position: "translate-x-20 -translate-y-2",
   },
   {
     name: "Especias",
@@ -64,7 +64,7 @@ export const ingredientes: Ingrediente[] = [
     image: "/images/polvo para hornear.png",
     descripcion:
       "El polvo para hornear es un ingrediente esencial para lograr que tus chipas queden esponjosas y con la textura perfecta.",
-    position: "translate-x-0 -translate-y-10",
+    position: "-translate-x-20 -translate-y-10",
   },
   {
     name: "Variedad de quesos",

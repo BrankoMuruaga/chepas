@@ -10,6 +10,10 @@ function Comunidad({ id }: { id: string }) {
       <section className="w-full h-1/2 pb-10">
         <CarrouselComunidad items={historias}></CarrouselComunidad>
       </section>
+      <img
+        src="/images/linea-comunidad.svg"
+        className="bottom-1/12 pointer-events-none absolute -z-10 w-full"
+      />
       <section className="flex flex-col gap-3 justify-center items-center mb-14 w-full">
         <p className="text-subtitle text-2xl text-center">
           ¿Querés ver más Chepas en acción?

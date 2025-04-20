@@ -41,40 +41,46 @@ function Contacto({ id }: { id: string }) {
   };
 
   return (
-    <Section
-      id={id}
-      title="¿Listo para pedir tus Chepas?"
-      subtitle="Escribinos por WhatsApp y coordinamos tu pedido en segundos"
-    >
-      <SectionDashed withBackground className="w-1/2 px-14 py-7">
-        <form
-          className="flex flex-col gap-6 justify-center items-center"
-          onSubmit={handleSubmit}
-        >
-          <NombreInput nombre={nombre} setNombre={setNombre} />
-          <CantidadSelector
-            cantidad={cantidad}
-            setCantidad={setCantidad}
-            otroValor={otroValor}
-            setOtroValor={setOtroValor}
-          />
-          <RecepcionSelector
-            recepcion={recepcion}
-            setRecepcion={setRecepcion}
-          />
-          <DiaHorarioSelector
-            dia={dia}
-            setDia={setDia}
-            horario={horario}
-            setHorario={setHorario}
-          />
-          <DetalleTextarea detalle={detalle} setDetalle={setDetalle} />
-          <ButtonIcon icon="/images/whatsapp.png" typeSubmit>
-            ¡Enviar pedido!
-          </ButtonIcon>
-        </form>
-      </SectionDashed>
-    </Section>
+    <>
+      <Section
+        id={id}
+        title="¿Listo para pedir tus Chepas?"
+        subtitle="Escribinos por WhatsApp y coordinamos tu pedido en segundos"
+      >
+        <SectionDashed withBackground className="w-1/2 px-14 py-7">
+          <form
+            className="flex flex-col gap-6 justify-center items-center"
+            onSubmit={handleSubmit}
+          >
+            <NombreInput nombre={nombre} setNombre={setNombre} />
+            <CantidadSelector
+              cantidad={cantidad}
+              setCantidad={setCantidad}
+              otroValor={otroValor}
+              setOtroValor={setOtroValor}
+            />
+            <RecepcionSelector
+              recepcion={recepcion}
+              setRecepcion={setRecepcion}
+            />
+            <DiaHorarioSelector
+              dia={dia}
+              setDia={setDia}
+              horario={horario}
+              setHorario={setHorario}
+            />
+            <DetalleTextarea detalle={detalle} setDetalle={setDetalle} />
+            <ButtonIcon icon="/images/whatsapp.png" typeSubmit>
+              ¡Enviar pedido!
+            </ButtonIcon>
+          </form>
+        </SectionDashed>
+      </Section>
+      <img
+        src="/images/linea-contacto.svg"
+        className="bottom-1/6 pointer-events-none absolute -z-10 w-screen -translate-y-24"
+      />
+    </>
   );
 }
 
