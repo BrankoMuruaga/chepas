@@ -5,16 +5,20 @@ import { pagos } from "../utils/data";
 function Pagos({ id }: { id: string }) {
   return (
     <>
+      <img
+        src="/images/linea-pagos.svg"
+        className="bottom-5/12 -rotate-12 pointer-events-none absolute -z-10 w-screen"
+      />
       <Section
         id={id}
         title="¿Cómo puedes pagar tu Chepa?"
         endPage="¡Elegí la forma que más te guste y ponete unas Chepas al horno!"
       >
-        <section className="w-full flex justify-center items-center my-10 gap-3">
+        <section className="w-full flex flex-col md:flex-row justify-center items-center md:my-10 gap-3">
           {pagos.map((pago) => (
             <SectionDashed
               withBackground
-              className="w-1/3 h-96 p-14"
+              className="md:w-1/3 h-96 p-14"
               key={pago.name}
             >
               <img className="h-44" src={pago.image} alt="" />
@@ -26,10 +30,6 @@ function Pagos({ id }: { id: string }) {
           ))}
         </section>
       </Section>
-      <img
-        src="/images/linea-pagos.svg"
-        className="bottom-5/12 -rotate-12 pointer-events-none absolute -z-10 w-screen"
-      />
     </>
   );
 }

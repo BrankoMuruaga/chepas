@@ -10,9 +10,9 @@ function Entregas({ id }: { id: string }) {
         title="¿Cómo puedes recibir tu Chepa?"
         endPage="¡Así de fácil llegan tus Chepas listas para acompañar los mejores momentos!"
       >
-        <section className="w-3/4 flex justify-around items-center m-10 gap-10">
+        <section className="w-full md:w-3/4 flex flex-col md:flex-row justify-around items-center md:m-10 gap-10">
           {envios.map((envio) => (
-            <SectionDashed className="w-1/2 h-96 p-14" key={envio.name}>
+            <SectionDashed className="md:w-1/2 h-96 p-14" key={envio.name}>
               <img className="h-44" src={envio.image} alt="" />
               <h1 className="text-title text-3xl">{envio.name}</h1>
               <p className="text-subtitle text-2xl text-center">

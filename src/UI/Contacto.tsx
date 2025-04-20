@@ -42,12 +42,16 @@ function Contacto({ id }: { id: string }) {
 
   return (
     <>
+      <img
+        src="/images/linea-contacto.svg"
+        className="bottom-1/6 pointer-events-none absolute -z-10 w-screen -translate-y-24"
+      />
       <Section
         id={id}
         title="¿Listo para pedir tus Chepas?"
         subtitle="Escribinos por WhatsApp y coordinamos tu pedido en segundos"
       >
-        <SectionDashed withBackground className="w-1/2 px-14 py-7">
+        <SectionDashed withBackground className="md:w-1/2 px-14 py-7">
           <form
             className="flex flex-col gap-6 justify-center items-center"
             onSubmit={handleSubmit}
@@ -76,10 +80,6 @@ function Contacto({ id }: { id: string }) {
           </form>
         </SectionDashed>
       </Section>
-      <img
-        src="/images/linea-contacto.svg"
-        className="bottom-1/6 pointer-events-none absolute -z-10 w-screen -translate-y-24"
-      />
     </>
   );
 }

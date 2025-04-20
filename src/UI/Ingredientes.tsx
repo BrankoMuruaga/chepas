@@ -10,7 +10,8 @@ function Ingredientes({ id }: { id: string }) {
           delicioso."
     >
       <section className="w-full flex justify-center items-center ">
-        <span className="absolute -z-10">
+        {/* Linea Desktop */}
+        <span className="absolute -z-10 hidden md:block">
           <svg
             className="w-full h-32"
             viewBox="0 0 1440 40"
@@ -26,18 +27,21 @@ function Ingredientes({ id }: { id: string }) {
             />
           </svg>
         </span>
-        {/* <img
-          src="/images/linea-ingredientes.svg"
-          className=" pointer-events-none absolute -z-10 w-screen"
-        /> */}
-        <div className="grid grid-cols-4 grid-rows-2 gap-4 justify-items-center items-center w-full">
+
+        {/* Linea Mobile */}
+        <img
+          src="/images/linea-ingredientes-mobile.svg"
+          className="-rotate-12 pointer-events-none absolute -z-10 w-screen h-screen block md:hidden"
+        />
+
+        <div className="grid grid-cols-2 md:grid-cols-4 grid-rows-4 md:grid-rows-2 gap-4 justify-items-center items-center w-full">
           {ingredientes.map((ingrediente) => (
             <span
               className={`transition-transform duration-200 hover:scale-125 flex flex-col justify-center items-center gap-2 ${ingrediente.position}`}
               key={ingrediente.name}
             >
               <img
-                className="h-20 2xl:h-24"
+                className="h-14 md:h-20 2xl:h-24"
                 src={ingrediente.image}
                 alt={ingrediente.name}
               />

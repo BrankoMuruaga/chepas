@@ -7,7 +7,7 @@ import { historias } from "../utils/data";
 function Comunidad({ id }: { id: string }) {
   return (
     <Section id={id} title="Chepas en acción">
-      <section className="w-full h-1/2 pb-10">
+      <section className="w-full  md:h-1/2 pb-10">
         <CarrouselComunidad items={historias}></CarrouselComunidad>
       </section>
       <img
