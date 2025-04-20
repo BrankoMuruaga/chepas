@@ -35,27 +35,22 @@
     color: var(--color-nutmeg-wood-900);
 }
 
-html {
-    height: 100%;
-    width: 100%;
-}
-
-body {
+html, body {
     box-sizing: border-box;
-    /* padding-inline: 1rem;
-    padding-top: .5rem; */
     margin: 0;
     position: relative;
 
     height: 100%;
     width: 100%;
+}
 
+body {
     display: grid;
     justify-items: center;
     align-content: center;
 
     grid-template-columns: auto;
-    grid-template-rows: 4fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
 
     background-color: var(--color-burning-orange-400);
 }

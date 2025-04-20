@@ -3,7 +3,7 @@ import Button from "../components/Button";
 
 function Hero() {
   return (
-    <header className="relative bg-web-orange-400 w-full pt-32">
+    <header className="relative bg-web-orange-400 size-full pt-32">
       <section className="flex w-full gap-5">
         <section className="pt-20 z-10 w-1/2">
           <Logo />
