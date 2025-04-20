@@ -1,4 +1,14 @@
-export const navbarItems = [
+import type {
+  NavbarItem,
+  Ingrediente,
+  Pago,
+  Envio,
+  Dia,
+  Horario,
+  Historia,
+} from "../types/types";
+
+export const navbarItems: NavbarItem[] = [
   {
     name: "Ingredientes",
     href: "#ingredientes",
@@ -21,7 +31,7 @@ export const navbarItems = [
   },
 ];
 
-export const ingredientes = [
+export const ingredientes: Ingrediente[] = [
   {
     name: "Fecula de mandioca",
     image: "/images/fecula de mandioca.png",
@@ -81,7 +91,7 @@ export const ingredientes = [
   },
 ];
 
-export const pagos = [
+export const pagos: Pago[] = [
   {
     name: "Efectivo",
     image: "/images/efectivo.png",
@@ -101,7 +111,7 @@ export const pagos = [
   },
 ];
 
-export const envios = [
+export const envios: Envio[] = [
   {
     name: "Retiro",
     image: "/images/pin-ubicacion.png",
@@ -114,7 +124,7 @@ export const envios = [
   },
 ];
 
-export const dias = [
+export const dias: Dia[] = [
   {
     name: "Lunes",
   },
@@ -135,7 +145,7 @@ export const dias = [
   },
 ];
 
-export const horarios = [
+export const horarios: Horario[] = [
   { name: "13:00" },
   { name: "14:00" },
   { name: "15:00" },
@@ -158,10 +168,37 @@ Quisiera pedir ${cantidadFinal} paquete${
     cantidadFinal === "1" ? "" : "s"
   } de Chepas 🧀.
 
-Opción de entrega: ${recepcion || "[retiro/envío]"}.
+Opción de entrega: ${recepcion || "[retiro/envío]"}. 
 
 ${dia ? `Día: ${dia}` : ""}${
     horario ? ` - Horario: ${horario}` : ""
   }${lineaDetalle}
 ¡Gracias! 😊`;
 };
+
+export const historias: Historia[] = [
+  {
+    image: "/comunidad/historia_1.png",
+    alt: "Historia 1",
+  },
+  {
+    image: "/comunidad/historia_2.png",
+    alt: "Historia 2",
+  },
+  {
+    image: "/comunidad/historia_3.png",
+    alt: "Historia 3",
+  },
+  {
+    image: "/comunidad/historia_4.png",
+    alt: "Historia 4",
+  },
+  {
+    image: "/comunidad/historia_5.png",
+    alt: "Historia 5",
+  },
+  {
+    image: "/comunidad/historia_6.png",
+    alt: "Historia 6",
+  },
+];
