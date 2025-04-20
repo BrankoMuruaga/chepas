@@ -80,3 +80,36 @@ export const ingredientes = [
     position: "-translate-x-4 translate-y-4",
   },
 ];
+
+export const pagos = [
+  {
+    name: "Efectivo",
+    image: "/images/efectivo.png",
+    descripcion:
+      "¡Podés pagar en mano, fácil y rápido, cuando recibís tu Chepa!",
+  },
+  {
+    name: "Mercado Pago",
+    image: "/images/mercadopago.png",
+    descripcion:
+      "Pagá desde tu celu con Mercado Pago, cómodo y seguro para vos.",
+  },
+  {
+    name: "Transferencia",
+    image: "/images/transferencia.png",
+    descripcion: "Si preferís, podés transferirnos y listo, ¡sin vueltas!",
+  },
+];
+
+export const envios = [
+  {
+    name: "Retiro",
+    image: "/images/pin-ubicacion.png",
+    descripcion: "De lunes a sábado en Villa Club, Hurlingham (a coordinar)",
+  },
+  {
+    name: "Envío",
+    image: "/images/envio.png",
+    descripcion: "De lunes a sábado por la tarde (a coordinar)",
+  },
+];

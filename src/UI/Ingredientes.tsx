@@ -1,15 +1,13 @@
+import Section from "../components/Section";
 import { ingredientes } from "../utils/data";
 
 function Ingredientes() {
   return (
-    <section className="w-full flex flex-col justify-center items-center mb-28">
-      <div className="flex flex-col justify-center items-center mt-10 mb-10 gap-4">
-        <h1 className="text-styled text-4xl">¿Qué tienen nuestras Chepas?</h1>
-        <p className="text-subtitle">
-          Ingredientes de calidad premium para un sabor casero, auténtico y
-          delicioso.
-        </p>
-      </div>
+    <Section
+      title="¿Qué tienen nuestras Chepas?"
+      subtitle="Ingredientes de calidad premium para un sabor casero, auténtico y
+          delicioso."
+    >
       <section className="w-full flex justify-center items-center ">
         <span className="absolute -z-10">
           <svg
@@ -34,7 +32,7 @@ function Ingredientes() {
               key={ingrediente.name}
             >
               <img
-                className="h-20"
+                className="h-20 2xl:h-24"
                 src={ingrediente.image}
                 alt={ingrediente.name}
               />
@@ -43,7 +41,7 @@ function Ingredientes() {
           ))}
         </div>
       </section>
-    </section>
+    </Section>
   );
 }
 

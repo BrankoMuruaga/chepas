@@ -1,16 +1,20 @@
-import React from "react";
-
 function Section({
+  title,
+  subtitle,
   children,
-  className,
 }: {
-  children: React.ReactNode;
-  className?: string;
+  title: string;
+  subtitle?: string;
+  children?: React.ReactNode;
 }) {
   return (
-    <section
-      className={`${className} flex flex-col justify-center items-center border-8 border-nutmeg-wood-900 border-dashed rounded-lg`}
-    >
+    <section className="w-full max-w-[1600px] flex flex-col justify-center items-center px-10">
+      <section className="w-full flex flex-col gap-3 justify-center items-center mb-14">
+        <h1 className="text-styled text-4xl">{title}</h1>
+        {subtitle && (
+          <p className="text-subtitle text-2xl text-center">{subtitle}</p>
+        )}
+      </section>
       {children}
     </section>
   );
