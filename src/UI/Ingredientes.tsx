@@ -1,9 +1,10 @@
 import Section from "../components/Section";
 import { ingredientes } from "../utils/data";
 
-function Ingredientes() {
+function Ingredientes({ id }: { id: string }) {
   return (
     <Section
+      id={id}
       title="¿Qué tienen nuestras Chepas?"
       subtitle="Ingredientes de calidad premium para un sabor casero, auténtico y
           delicioso."

@@ -2,9 +2,13 @@ import SectionDashed from "../components/SectionDashed";
 import Section from "../components/Section";
 import { pagos } from "../utils/data";
 
-function Pagos() {
+function Pagos({ id }: { id: string }) {
   return (
-    <Section title="¿Cómo puedes pagar tu Chepa?">
+    <Section
+      id={id}
+      title="¿Cómo puedes pagar tu Chepa?"
+      endPage="¡Elegí la forma que más te guste y ponete unas Chepas al horno!"
+    >
       <section className="w-full flex justify-center items-center my-10 gap-3">
         {pagos.map((pago) => (
           <SectionDashed

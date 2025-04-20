@@ -5,19 +5,19 @@ export const navbarItems = [
   },
   {
     name: "Entregas",
-    href: "#Entregas",
+    href: "#entregas",
   },
   {
     name: "Pagos",
-    href: "#Pagos",
+    href: "#pagos",
   },
   {
     name: "Contacto",
-    href: "#Contacto",
+    href: "#contacto",
   },
   {
     name: "Comunidad",
-    href: "#Comunidad",
+    href: "#comunidad",
   },
 ];
 
@@ -113,3 +113,55 @@ export const envios = [
     descripcion: "De lunes a sábado por la tarde (a coordinar)",
   },
 ];
+
+export const dias = [
+  {
+    name: "Lunes",
+  },
+  {
+    name: "Martes",
+  },
+  {
+    name: "Miércoles",
+  },
+  {
+    name: "Jueves",
+  },
+  {
+    name: "Viernes",
+  },
+  {
+    name: "Sábado",
+  },
+];
+
+export const horarios = [
+  { name: "13:00" },
+  { name: "14:00" },
+  { name: "15:00" },
+  { name: "16:00" },
+  { name: "17:00" },
+  { name: "18:00" },
+];
+
+export const generarMensajeWhatsApp = (
+  nombre: string,
+  cantidadFinal: string,
+  recepcion: string,
+  dia?: string,
+  horario?: string,
+  detalle?: string
+) => {
+  const lineaDetalle = detalle ? `\n${detalle}` : "";
+  return `¡Hola! Soy ${nombre || "[tu nombre]"} 👋🏼
+Quisiera pedir ${cantidadFinal} paquete${
+    cantidadFinal === "1" ? "" : "s"
+  } de Chepas 🧀.
+
+Opción de entrega: ${recepcion || "[retiro/envío]"}.
+
+${dia ? `Día: ${dia}` : ""}${
+    horario ? ` - Horario: ${horario}` : ""
+  }${lineaDetalle}
+¡Gracias! 😊`;
+};

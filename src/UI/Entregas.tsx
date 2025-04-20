@@ -2,9 +2,13 @@ import { envios } from "../utils/data";
 import Section from "../components/Section";
 import SectionDashed from "../components/SectionDashed";
 
-function Entregas() {
+function Entregas({ id }: { id: string }) {
   return (
-    <Section title="¿Cómo puedes recibir tu Chepa?">
+    <Section
+      id={id}
+      title="¿Cómo puedes recibir tu Chepa?"
+      endPage="¡Así de fácil llegan tus Chepas listas para acompañar los mejores momentos!"
+    >
       <section className="w-3/4 flex justify-around items-center m-10 gap-10">
         {envios.map((envio) => (
           <SectionDashed className="w-1/2 h-96 p-14" key={envio.name}>

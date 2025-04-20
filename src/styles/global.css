@@ -42,6 +42,8 @@ html, body {
     box-sizing: border-box;
     margin: 0;
     position: relative;
+
+    scroll-behavior: smooth;
 }
 
 body {
@@ -52,25 +54,4 @@ body {
     gap: 6rem;
 
     background-color: var(--color-burning-orange-400);
-}
-
-.custom-shape-divider-top-1745016309 {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    transform: scaleX(-1);
-}
-
-.custom-shape-divider-top-1745016309 svg {
-    position: relative;
-    display: block;
-    width: 150%;
-    height: 13rem;
-    transform: translateX(-5%);
-}
-
-.custom-shape-divider-top-1745016309 .shape-fill {
-    fill: var(--color-burning-orange-400);
 }
