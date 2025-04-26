@@ -23,7 +23,7 @@ function Section({
           {title}
         </h1>
         {subtitle && (
-          <p className="text-subtitle text-xl md:text-2xl text-center">
+          <p className="text-subtitle text-lg md:text-2xl text-center">
             {subtitle}
           </p>
         )}

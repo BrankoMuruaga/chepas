@@ -49,9 +49,9 @@ function Contacto({ id }: { id: string }) {
       <Section
         id={id}
         title="¿Listo para pedir tus Chepas?"
-        subtitle="Escribinos por WhatsApp y coordinamos tu pedido en segundos"
+        subtitle="Escribinos por WhatsApp y coordinamos tu pedido en minutos"
       >
-        <SectionDashed withBackground className="md:w-1/2 px-14 py-7">
+        <SectionDashed withBackground className="md:w-1/2 py-14 px-5 md:px-14 ">
           <form
             className="flex flex-col gap-6 justify-center items-center"
             onSubmit={handleSubmit}

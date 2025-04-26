@@ -22,8 +22,10 @@ function Pagos({ id }: { id: string }) {
               key={pago.name}
             >
               <img className="h-44" src={pago.image} alt="" />
-              <h1 className="text-title text-3xl">{pago.name}</h1>
-              <p className="text-subtitle text-2xl text-center">
+              <h1 className="text-title text-center text-2xl md:text-3xl">
+                {pago.name}
+              </h1>
+              <p className="text-subtitle text-lg md:text-2xl text-center">
                 {pago.descripcion}
               </p>
             </SectionDashed>

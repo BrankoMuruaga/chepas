@@ -1,7 +1,5 @@
 @import "tailwindcss";
 
-@custom-variant dark (&:where(.dark, .dark *));
-
 @theme {
     --color-burning-orange-500: #ef3907;
     --color-burning-orange-400: #FF702C;

@@ -17,9 +17,10 @@ function Navbar() {
           <Menu />
         </button>
         <section
-          className="rounded-l-2xl absolute top-0 right-0 w-2/3 h-screen bg-web-orange-400 transition-transform duration-300 ease-in-out"
+          className="rounded-l-2xl absolute top-0 right-0 w-2/3 h-screen bg-web-orange-400 transition-transform duration-300 ease-in-out "
           style={{
             transform: isOpen ? "translateX(0)" : "translateX(100%)",
+            filter: "drop-shadow(0px 7px 5px rgba(0, 0, 0, 0.5))",
           }}
         >
           <button
