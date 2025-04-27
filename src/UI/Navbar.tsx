@@ -18,7 +18,7 @@ function Navbar() {
         </button>
         <img
           id="wave-navbar-mobile"
-          src="/images/wave-navbar-mobile.svg"
+          src="/images/wave-logo-navbar-mobile.svg"
           className={`w-screen absolute object-cover md:hidden ${
             isOpen ? "-translate-y-[100%]" : ""
           } transition-all duration-300 ease-in-out`}
@@ -67,8 +67,8 @@ function Navbar() {
         </ul>
         <img
           id="wave-navbar"
-          src="/images/wave-navbar.svg"
-          className="w-screen absolute object-cover -z-10 -top-3 md:block hidden"
+          src="/images/wave-logo-navbar.svg"
+          className="w-screen absolute object-cover -z-10 -top-0 md:block hidden"
         />
       </nav>
     </>

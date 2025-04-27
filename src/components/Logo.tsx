@@ -1,6 +1,7 @@
-function Logo({ className }: { className?: string }) {
+function Logo({ className, id }: { className?: string; id?: string }) {
   return (
     <img
+      id={id}
       src="/images/Logo.png"
       alt="Logo de Chepas"
       className={className}

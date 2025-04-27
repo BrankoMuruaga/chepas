@@ -13,7 +13,7 @@ function Entregas({ id }: { id: string }) {
         <section className="w-full md:w-3/4 flex flex-col md:flex-row justify-around items-center md:m-10 gap-10">
           {envios.map((envio) => (
             <SectionDashed
-              className="md:w-1/2 h-96 py-14 px-5 md:p-14"
+              className="md:w-1/2 w-96 h-96 py-14 px-5 md:p-14"
               key={envio.name}
             >
               <img className="h-44" src={envio.image} alt="" />

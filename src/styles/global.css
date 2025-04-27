@@ -50,28 +50,32 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 6rem;
+    gap: 10rem;
 
     background-color: var(--color-burning-orange-400);
 }
 
-#wave-navbar-mobile, #wave-navbar{
+#wave-navbar-mobile,
+#wave-navbar {
+    transform: translateY(-50px);
     opacity: 0;
     filter: drop-shadow(0px 7px 5px rgba(0, 0, 0, 0.2));
-    animation: opacity linear both;
+    animation: slideDown linear both;
     animation-timeline: scroll();
-    animation-range: 40vh 50vh;
 }
-#wave-navbar{
-    opacity: 0;
-    filter: drop-shadow(0px 7px 5px rgba(0, 0, 0, 0.2));
-    animation: opacity linear both;
-    animation-timeline: scroll();
+
+#wave-navbar-mobile {
+    animation-range: 40vh 60vh;
+}
+
+#wave-navbar {
     animation-range: 0 30vh;
 }
 
-@keyframes opacity {
+@keyframes slideDown {
     to {
+        transform: translateY(0);
         opacity: 1;
     }
 }
+

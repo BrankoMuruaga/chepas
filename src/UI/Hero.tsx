@@ -6,7 +6,7 @@ function Hero() {
     <header className="relative w-full min-h-dvh  md:translate-y-0 h-dvh flex flex-col justify-center">
       <section className="flex flex-col md:flex-row justify-center items-center gap-7 md:gap-16">
         <section className="relative z-10 w-3/4 md:w-1/2 flex justify-center items-center ">
-          <Logo className="sm:h-max md:absolute " />
+          <Logo id="logo" className="sm:h-max " />
         </section>
         <section className="flex flex-col justify-center items-center md:items-start md:w-1/2 gap-5 md:gap-10 ">
           <div className="flex flex-col gap-5">
