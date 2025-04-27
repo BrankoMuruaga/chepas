@@ -37,14 +37,15 @@ export const ingredientes: Ingrediente[] = [
     image: "/images/fecula de mandioca.png",
     descripcion:
       "La fécula de mandioca es la base de la chipa, aportando su textura característica y sabor único.",
-    position: "text-center md:translate-x-20 md:-translate-y-2",
+    position: "text-center -translate-y-10 md:translate-x-20 md:-translate-y-2",
   },
   {
     name: "Especias",
     image: "/images/especias.png",
     descripcion:
       "Las especias aportan un toque especial que realza el sabor de cada bocado.",
-    position: "text-center md:translate-x-32 md:translate-y-8",
+    position:
+      "text-center -translate-x-16 translate-y-10 md:translate-x-32 md:translate-y-8",
   },
   {
     name: "Leche",
@@ -57,21 +58,23 @@ export const ingredientes: Ingrediente[] = [
     image: "/images/sal.png",
     descripcion:
       "La sal equilibra los sabores y resalta el gusto de los demás ingredientes.",
-    position: "text-center md:translate-x-24 md:translate-y-8",
+    position:
+      "text-center -translate-x-16 translate-y-10 md:translate-x-24 md:translate-y-8",
   },
   {
     name: "Polvo para hornear",
     image: "/images/polvo para hornear.png",
     descripcion:
       "El polvo para hornear es un ingrediente esencial para lograr que tus chipas queden esponjosas y con la textura perfecta.",
-    position: "text-center md:-translate-x-20 md:-translate-y-10",
+    position:
+      "text-center translate-x-24 md:-translate-x-20 md:-translate-y-10",
   },
   {
     name: "Variedad de quesos",
     image: "/images/queso.png",
     descripcion:
       "Los quesos seleccionados le dan a la chipa su sabor inconfundible y delicioso.",
-    position: "text-center md:-translate-x-6 md:translate-y-2",
+    position: "text-center translate-y-20 md:-translate-x-6 md:translate-y-2",
   },
 
   {
@@ -79,7 +82,8 @@ export const ingredientes: Ingrediente[] = [
     image: "/images/huevo.png",
     descripcion:
       "El huevo es clave para unir los ingredientes y dar estructura a la chipa.",
-    position: "text-center md:-translate-x-8 md:-translate-y-12",
+    position:
+      "text-center translate-x-32 translate-y-16 md:-translate-x-8 md:-translate-y-12",
   },
 
   {
@@ -87,7 +91,8 @@ export const ingredientes: Ingrediente[] = [
     image: "/images/manteca.png",
     descripcion:
       "La manteca añade un sabor rico y ayuda a lograr una textura perfecta.",
-    position: "text-center md:-translate-x-4 md:translate-y-4",
+    position:
+      "text-center translate-x-12 translate-y-32 md:-translate-x-4 md:translate-y-4",
   },
 ];
 
