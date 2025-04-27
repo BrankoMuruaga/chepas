@@ -9,15 +9,22 @@ function Navbar() {
 
   return (
     <>
-      <nav className="fixed top-0 w-full z-50 md:hidden">
+      <nav id="menu-mobile" className="fixed top-0 w-full z-50 md:hidden">
         <button
-          className="absolute right-4 top-4 text-nutmeg-wood-900"
+          className="absolute right-4 top-4 text-nutmeg-wood-900 z-50"
           onClick={() => setIsOpen(!isOpen)}
         >
           <Menu />
         </button>
+        <img
+          id="wave-navbar-mobile"
+          src="/images/wave-navbar-mobile.svg"
+          className={`w-screen absolute object-cover md:hidden ${
+            isOpen ? "-translate-y-[100%]" : ""
+          } transition-all duration-300 ease-in-out`}
+        />
         <section
-          className="rounded-l-2xl absolute top-0 right-0 w-2/3 h-screen bg-web-orange-400 transition-transform duration-300 ease-in-out "
+          className="rounded-l-2xl absolute top-0 right-0 w-2/3 h-screen bg-web-orange-400 transition-transform duration-300 ease-in-out z-50"
           style={{
             transform: isOpen ? "translateX(0)" : "translateX(100%)",
             filter: "drop-shadow(0px 7px 5px rgba(0, 0, 0, 0.5))",
@@ -47,7 +54,7 @@ function Navbar() {
           </ul>
         </section>
       </nav>
-      <nav className="absolute top-0 w-2/4 z-50 m-auto hidden md:block">
+      <nav className="fixed top-0 w-full z-50 m-auto hidden md:block">
         <ul className="flex justify-center items-center p-4 gap-12 text-styled text-nutmeg-wood-900">
           {navbarItems.map((item, index) => (
             <li key={index} className="relative group">
@@ -58,6 +65,11 @@ function Navbar() {
             </li>
           ))}
         </ul>
+        <img
+          id="wave-navbar"
+          src="/images/wave-navbar.svg"
+          className="w-screen absolute object-cover -z-10 -top-3 md:block hidden"
+        />
       </nav>
     </>
   );

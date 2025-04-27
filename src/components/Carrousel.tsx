@@ -1,11 +1,9 @@
-// core version + navigation, pagination modules:
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, EffectCoverflow } from "swiper/modules";
-// import Swiper and modules styles
+import type { Historia } from "@/types/types";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import type { Historia } from "@/types/types";
+import { EffectCoverflow } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
 
 function Carrousel({ items = [] }: { items: Historia[] }) {
   return (

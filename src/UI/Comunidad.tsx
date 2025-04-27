@@ -1,6 +1,5 @@
-import CarrouselComunidad from "../components/Carrousel";
 import ButtonIcon from "../components/ButtonIcon";
-import Carrousel from "../components/Carrousel";
+import CarrouselComunidad from "../components/Carrousel";
 import Section from "../components/Section";
 import { historias } from "../utils/data";
 

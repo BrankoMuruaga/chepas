@@ -11,11 +11,12 @@ import Comunidad from "../UI/Comunidad";
 ---
 
 <Layout>
-  <Hero client:only />
+  <Navbar client:load />
+  <Hero />
   <Ingredientes id="ingredientes" />
   <Entregas id="entregas" />
   <Pagos id="pagos" />
-  <Contacto id="contacto" client:only />
-  <Comunidad id="comunidad" client:only />
+  <Contacto id="contacto" client:load />
+  <Comunidad id="comunidad" client:load />
   <Footer />
 </Layout>
