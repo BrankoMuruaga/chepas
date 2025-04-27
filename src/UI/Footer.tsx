@@ -14,6 +14,7 @@ function Footer() {
 
       <img
         src="/images/wave-footer-mobile.svg"
+        loading="lazy"
         className="md:hidden absolute -z-10 bottom-0 left-0 w-full overflow-hidden"
       />
       <section className="flex w-full justify-start items-start md:top-32 h-20 pl-12 md:pl-24">

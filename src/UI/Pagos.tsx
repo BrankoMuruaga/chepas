@@ -7,10 +7,12 @@ function Pagos({ id }: { id: string }) {
     <>
       <img
         src="/images/linea-pagos.svg"
+        loading="lazy"
         className="bottom-5/12 -rotate-12 pointer-events-none absolute -z-10 w-screen hidden md:block"
       />
       <img
         src="/images/linea-pagos-mobile.svg"
+        loading="lazy"
         className="bottom-5/12 -rotate-12 pointer-events-none absolute -z-10 w-screen md:hidden"
       />
       <Section
@@ -25,7 +27,7 @@ function Pagos({ id }: { id: string }) {
               className="md:w-1/3 h-96 p-14"
               key={pago.name}
             >
-              <img className="h-44" src={pago.image} alt="" />
+              <img className="h-44" src={pago.image} alt="" loading="lazy" />
               <h1 className="text-title text-center text-2xl md:text-3xl">
                 {pago.name}
               </h1>

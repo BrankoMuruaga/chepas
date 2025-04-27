@@ -48,7 +48,12 @@ function Carrousel({ items = [] }: { items: Historia[] }) {
             key={index}
             className="rounded-xl md:rounded-4xl overflow-hidden"
           >
-            <img src={item.image} alt={item.alt} className="w-full h-full" />
+            <img
+              src={item.image}
+              alt={item.alt}
+              className="w-full h-full"
+              loading="lazy"
+            />
           </SwiperSlide>
         ))}
       </Swiper>

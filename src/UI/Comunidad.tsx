@@ -10,10 +10,12 @@ function Comunidad({ id }: { id: string }) {
         <CarrouselComunidad items={historias}></CarrouselComunidad>
       </section>
       <img
+        loading="lazy"
         src="/images/linea-comunidad.svg"
         className="bottom-1/12 pointer-events-none absolute -z-10 w-full hidden md:block"
       />
       <img
+        loading="lazy"
         src="/images/linea-comunidad-mobile.svg"
         className="bottom-1/12 pointer-events-none absolute -z-10 w-full md:hidden"
       />

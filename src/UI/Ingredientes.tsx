@@ -31,6 +31,7 @@ function Ingredientes({ id }: { id: string }) {
         {/* Linea Mobile */}
         <img
           src="/images/linea-ingredientes-mobile.svg"
+          loading="lazy"
           className="-rotate-12 pointer-events-none absolute -z-10 w-screen h-screen block md:hidden"
         />
 
@@ -44,6 +45,7 @@ function Ingredientes({ id }: { id: string }) {
                 className="h-14 md:h-20 2xl:h-24"
                 src={ingrediente.image}
                 alt={ingrediente.name}
+                loading="lazy"
               />
               <h2 className="text-styled text-lg">{ingrediente.name}</h2>
             </span>

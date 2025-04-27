@@ -40,10 +40,12 @@ function Contacto({ id }: { id: string }) {
   return (
     <>
       <img
+        loading="lazy"
         src="/images/linea-contacto.svg"
         className="bottom-1/6 pointer-events-none absolute -z-10 w-screen -translate-y-24 hidden md:block"
       />
       <img
+        loading="lazy"
         src="/images/linea-contacto-mobile.svg"
         className="bottom-1/6 pointer-events-none absolute -z-10 w-screen -translate-y-24  md:hidden"
       />

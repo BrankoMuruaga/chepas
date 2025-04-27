@@ -14,9 +14,9 @@ function Entregas({ id }: { id: string }) {
           {envios.map((envio) => (
             <SectionDashed className="md:w-1/2 h-96 p-14" key={envio.name}>
               <img
+                loading="lazy"
                 className="h-44 max-h-44 object-contain"
                 src={envio.image}
-                alt=""
               />
               <h1 className="text-title text-3xl">{envio.name}</h1>
               <p className="text-subtitle text-lg md:text-2xl w-3/4 text-center">
@@ -27,10 +27,12 @@ function Entregas({ id }: { id: string }) {
         </section>
       </Section>
       <img
+        loading="lazy"
         src="/images/linea-pagos.svg"
         className="bottom-7/12 -rotate-12 translate-y-24 pointer-events-none absolute -z-10 w-screen hidden md:block"
       />
       <img
+        loading="lazy"
         src="/images/linea-retiro-mobile.svg"
         className="bottom-7/12  translate-y-24 pointer-events-none absolute -z-10 w-screen md:hidden"
       />

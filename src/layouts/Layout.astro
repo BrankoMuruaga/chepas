@@ -10,9 +10,69 @@ import "@fontsource/nunito";
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <title>Chepas</title>
+    <meta name="theme-color" content="#F8A519" />
+    <link rel="icon" href="/favicon.webp" type="image/webp" />
+    <title>
+      Chepas | Chipa artesanal congelada - Compra online en Argentina
+    </title>
+    <meta
+      name="description"
+      content="Disfrutá el mejor chipa artesanal congelado de Argentina. Chepas ofrece chipá premium, práctico y delicioso, listo para hornear. ¡Comprá online y recibilo en tu casa!"
+    />
+    <meta
+      name="keywords"
+      content="chipa artesanal, comprar chipá, chipá congelado, venta de chipa online, chipa Argentina, pan de queso, snack sin gluten, comida paraguaya, chipá casero"
+    />
+    <meta name="author" content="Branko Muruaga" />
+
+    <!-- Open Graph / Facebook -->
+    <meta
+      property="og:title"
+      content="Chepas | Chipa artesanal congelada - Compra online en Argentina"
+    />
+    <meta
+      property="og:description"
+      content="Chepas ofrece chipá artesanal congelado, práctico y delicioso. Comprá online y recibí calidad premium en tu hogar."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://chepas.vercel.app/" />
+    <meta
+      property="og:image"
+      content="https://chepas.vercel.app/og-image.webp"
+    />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Chepas | Chipa artesanal congelada - Compra online en Argentina"
+    />
+    <meta
+      name="twitter:description"
+      content="Comprá el mejor chipa artesanal congelado en Argentina con Chepas. Calidad premium y entrega rápida."
+    />
+    <meta
+      name="twitter:image"
+      content="https://chepas.vercel.app/og-image.webp"
+    />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Chepas",
+        "image": "https://chepas.vercel.app/og-image.webp",
+        "url": "https://chepas.vercel.app/",
+        "description": "Chepas ofrece chipa artesanal congelado de alta calidad, práctico y delicioso para disfrutar en casa.",
+        "address": {
+          "@type": "PostalAddress",
+          "addressCountry": "AR"
+        },
+        "sameAs": ["https://instagram.com/chepas.arg"]
+      }
+    </script>
   </head>
+
   <body class="gap-36 md:gap-24">
     <slot />
   </body>
