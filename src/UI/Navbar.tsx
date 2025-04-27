@@ -19,7 +19,7 @@ function Navbar() {
         <img
           id="wave-navbar-mobile"
           src="/images/wave-logo-navbar-mobile.svg"
-          className={`w-screen absolute object-cover md:hidden ${
+          className={`w-screen absolute object-cover md:hidden pointer-events-none ${
             isOpen ? "-translate-y-[100%]" : ""
           } transition-all duration-300 ease-in-out`}
         />
@@ -68,7 +68,7 @@ function Navbar() {
         <img
           id="wave-navbar"
           src="/images/wave-logo-navbar.svg"
-          className="w-screen absolute object-cover -z-10 -top-0 md:block hidden"
+          className="w-screen absolute object-cover -z-10 -top-0 md:block hidden pointer-events-none"
         />
       </nav>
     </>

@@ -34,9 +34,6 @@ function Contacto({ id }: { id: string }) {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    console.log("Formulario enviado"); // Puedes eliminar esta línea si no la necesitas
-
-    // El navegador valida los campos required automáticamente antes de llamar a esta función
     window.open(url, "_blank");
   };
 
