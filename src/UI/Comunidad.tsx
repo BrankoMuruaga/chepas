@@ -11,7 +11,11 @@ function Comunidad({ id }: { id: string }) {
       </section>
       <img
         src="/images/linea-comunidad.svg"
-        className="bottom-1/12 pointer-events-none absolute -z-10 w-full"
+        className="bottom-1/12 pointer-events-none absolute -z-10 w-full hidden md:block"
+      />
+      <img
+        src="/images/linea-comunidad-mobile.svg"
+        className="bottom-1/12 pointer-events-none absolute -z-10 w-full md:hidden"
       />
       <section className="flex flex-col gap-3 justify-center items-center mb-14 w-full">
         <p className="text-subtitle text-2xl text-center">

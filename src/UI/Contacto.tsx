@@ -41,7 +41,11 @@ function Contacto({ id }: { id: string }) {
     <>
       <img
         src="/images/linea-contacto.svg"
-        className="bottom-1/6 pointer-events-none absolute -z-10 w-screen -translate-y-24"
+        className="bottom-1/6 pointer-events-none absolute -z-10 w-screen -translate-y-24 hidden md:block"
+      />
+      <img
+        src="/images/linea-contacto-mobile.svg"
+        className="bottom-1/6 pointer-events-none absolute -z-10 w-screen -translate-y-24  md:hidden"
       />
       <Section
         id={id}
