@@ -71,7 +71,7 @@ function Contacto({ id }: { id: string }) {
               setHorario={setHorario}
             />
             <DetalleTextarea detalle={detalle} setDetalle={setDetalle} />
-            <ButtonIcon icon="/images/whatsapp.png" typeSubmit>
+            <ButtonIcon icon="/images/whatsapp.webp" typeSubmit>
               ¡Enviar pedido!
             </ButtonIcon>
           </form>

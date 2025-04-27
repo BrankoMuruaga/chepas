@@ -50,7 +50,6 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 10rem;
 
     background-color: var(--color-burning-orange-400);
 }

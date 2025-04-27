@@ -18,7 +18,7 @@ function Comunidad({ id }: { id: string }) {
           ¿Querés ver más Chepas en acción?
         </p>
         <ButtonIcon
-          icon="/images/Instagram.png"
+          icon="/images/Instagram.webp"
           href="https://instagram.com/chepas.arg"
         >
           Seguinos en Instagram

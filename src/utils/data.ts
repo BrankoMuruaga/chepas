@@ -34,14 +34,14 @@ export const navbarItems: NavbarItem[] = [
 export const ingredientes: Ingrediente[] = [
   {
     name: "Fecula de mandioca",
-    image: "/images/fecula de mandioca.png",
+    image: "/images/fecula de mandioca.webp",
     descripcion:
       "La fécula de mandioca es la base de la chipa, aportando su textura característica y sabor único.",
     position: "text-center -translate-y-10 md:translate-x-20 md:-translate-y-2",
   },
   {
     name: "Especias",
-    image: "/images/especias.png",
+    image: "/images/especias.webp",
     descripcion:
       "Las especias aportan un toque especial que realza el sabor de cada bocado.",
     position:
@@ -49,13 +49,13 @@ export const ingredientes: Ingrediente[] = [
   },
   {
     name: "Leche",
-    image: "/images/leche.png",
+    image: "/images/leche.webp",
     descripcion: "La leche aporta suavidad y un toque de cremosidad a la masa.",
     position: "text-center md:translate-x-40 md:translate-y-4",
   },
   {
     name: "Sal",
-    image: "/images/sal.png",
+    image: "/images/sal.webp",
     descripcion:
       "La sal equilibra los sabores y resalta el gusto de los demás ingredientes.",
     position:
@@ -63,7 +63,7 @@ export const ingredientes: Ingrediente[] = [
   },
   {
     name: "Polvo para hornear",
-    image: "/images/polvo para hornear.png",
+    image: "/images/polvo para hornear.webp",
     descripcion:
       "El polvo para hornear es un ingrediente esencial para lograr que tus chipas queden esponjosas y con la textura perfecta.",
     position:
@@ -71,7 +71,7 @@ export const ingredientes: Ingrediente[] = [
   },
   {
     name: "Variedad de quesos",
-    image: "/images/queso.png",
+    image: "/images/queso.webp",
     descripcion:
       "Los quesos seleccionados le dan a la chipa su sabor inconfundible y delicioso.",
     position: "text-center translate-y-20 md:-translate-x-6 md:translate-y-2",
@@ -79,7 +79,7 @@ export const ingredientes: Ingrediente[] = [
 
   {
     name: "Huevo",
-    image: "/images/huevo.png",
+    image: "/images/huevo.webp",
     descripcion:
       "El huevo es clave para unir los ingredientes y dar estructura a la chipa.",
     position:
@@ -88,7 +88,7 @@ export const ingredientes: Ingrediente[] = [
 
   {
     name: "Manteca",
-    image: "/images/manteca.png",
+    image: "/images/manteca.webp",
     descripcion:
       "La manteca añade un sabor rico y ayuda a lograr una textura perfecta.",
     position:
@@ -99,19 +99,19 @@ export const ingredientes: Ingrediente[] = [
 export const pagos: Pago[] = [
   {
     name: "Efectivo",
-    image: "/images/efectivo.png",
+    image: "/images/efectivo.webp",
     descripcion:
       "¡Podés pagar en mano, fácil y rápido, cuando recibís tu Chepa!",
   },
   {
     name: "Mercado Pago",
-    image: "/images/mercadopago.png",
+    image: "/images/mercadopago.webp",
     descripcion:
       "Pagá desde tu celu con Mercado Pago, cómodo y seguro para vos.",
   },
   {
     name: "Transferencia",
-    image: "/images/transferencia.png",
+    image: "/images/transferencia.webp",
     descripcion: "Si preferís, podés transferirnos y listo, ¡sin vueltas!",
   },
 ];
@@ -119,12 +119,12 @@ export const pagos: Pago[] = [
 export const envios: Envio[] = [
   {
     name: "Retiro",
-    image: "/images/pin-ubicacion.png",
+    image: "/images/pin-ubicacion.webp",
     descripcion: "De lunes a sábado en Villa Club, Hurlingham (a coordinar)",
   },
   {
     name: "Envío",
-    image: "/images/envio.png",
+    image: "/images/envio.webp",
     descripcion: "De lunes a sábado por la tarde (a coordinar)",
   },
 ];
@@ -183,27 +183,27 @@ ${dia ? `Día: ${dia}` : ""}${
 
 export const historias: Historia[] = [
   {
-    image: "/comunidad/historia_1.png",
+    image: "/comunidad/historia_1.webp",
     alt: "Historia 1",
   },
   {
-    image: "/comunidad/historia_2.png",
+    image: "/comunidad/historia_2.webp",
     alt: "Historia 2",
   },
   {
-    image: "/comunidad/historia_3.png",
+    image: "/comunidad/historia_3.webp",
     alt: "Historia 3",
   },
   {
-    image: "/comunidad/historia_4.png",
+    image: "/comunidad/historia_4.webp",
     alt: "Historia 4",
   },
   {
-    image: "/comunidad/historia_5.png",
+    image: "/comunidad/historia_5.webp",
     alt: "Historia 5",
   },
   {
-    image: "/comunidad/historia_6.png",
+    image: "/comunidad/historia_6.webp",
     alt: "Historia 6",
   },
 ];
