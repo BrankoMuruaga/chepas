@@ -31,7 +31,6 @@ function Ingredientes({ id }: { id: string }) {
         {/* Linea Mobile */}
         <img
           src="/images/linea-ingredientes-mobile.svg"
-          loading="lazy"
           className="-rotate-12 pointer-events-none absolute -z-10 w-screen h-screen block md:hidden"
         />
 

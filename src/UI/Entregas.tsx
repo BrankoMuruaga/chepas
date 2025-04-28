@@ -27,12 +27,10 @@ function Entregas({ id }: { id: string }) {
         </section>
       </Section>
       <img
-        loading="lazy"
         src="/images/linea-pagos.svg"
         className="bottom-7/12 -rotate-12 translate-y-24 pointer-events-none absolute -z-10 w-screen hidden md:block"
       />
       <img
-        loading="lazy"
         src="/images/linea-retiro-mobile.svg"
         className="bottom-7/12  translate-y-24 pointer-events-none absolute -z-10 w-screen md:hidden"
       />

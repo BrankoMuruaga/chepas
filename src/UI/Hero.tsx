@@ -3,7 +3,7 @@ import Logo from "../components/Logo";
 
 function Hero() {
   return (
-    <header className="relative w-full min-h-dvh  md:translate-y-0 h-dvh flex flex-col justify-center">
+    <header className="relative w-full min-h-screen  md:translate-y-0 h-screen flex flex-col justify-center">
       <section className="flex flex-col md:flex-row justify-center items-center gap-7 md:gap-16">
         <section className="relative z-10 w-3/4 md:w-1/2 flex justify-center items-center ">
           <Logo id="logo" className="sm:h-max " />

@@ -7,12 +7,10 @@ function Pagos({ id }: { id: string }) {
     <>
       <img
         src="/images/linea-pagos.svg"
-        loading="lazy"
         className="bottom-5/12 -rotate-12 pointer-events-none absolute -z-10 w-screen hidden md:block"
       />
       <img
         src="/images/linea-pagos-mobile.svg"
-        loading="lazy"
         className="bottom-5/12 -rotate-12 pointer-events-none absolute -z-10 w-screen md:hidden"
       />
       <Section
