@@ -16,7 +16,7 @@ function Section({
   return (
     <section
       id={id}
-      className="w-full max-w-[1600px] flex flex-col justify-center items-center px-3 md:px-10 scroll-mt-28 md:scroll-mt-36"
+      className="w-full max-w-[1600px] min-h-screen flex flex-col justify-center items-center px-3 md:px-10 scroll-mt-28 md:scroll-mt-36"
     >
       <section className="w-full flex flex-col gap-3 justify-center items-center mb-14">
         <h1 className="text-styled text-3xl !text-center md:text-4xl">
