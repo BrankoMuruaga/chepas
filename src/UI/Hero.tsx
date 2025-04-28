@@ -28,13 +28,11 @@ function Hero() {
       </section>
       <img
         src="/images/wave-hero.svg"
-        loading="lazy"
         className="w-screen absolute -z-10 -top-24 object-cover hidden md:block"
       />
 
       <img
         src="/images/wave-hero-mobile.svg"
-        loading="lazy"
         className="w-full h-full absolute -z-10 -top-10 object-cover md:hidden"
       />
     </header>

@@ -25,7 +25,7 @@ function Pagos({ id }: { id: string }) {
               className="md:w-1/3 h-96 p-14"
               key={pago.name}
             >
-              <img className="h-44" src={pago.image} alt="" loading="lazy" />
+              <img className="h-44" src={pago.image} alt="" />
               <h1 className="text-title text-center text-2xl md:text-3xl">
                 {pago.name}
               </h1>

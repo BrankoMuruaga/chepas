@@ -22,7 +22,7 @@ function ButtonIcon({
         target="_blank"
         rel="noopener noreferrer"
       >
-        <img src={icon} alt="Icon" className="w-6 h-6" loading="lazy" />
+        <img src={icon} alt="Icon" className="w-6 h-6" />
         {children}
       </a>
     );
@@ -34,7 +34,7 @@ function ButtonIcon({
       style={style}
       type={typeSubmit ? "submit" : undefined}
     >
-      <img src={icon} alt="Icon" className="w-6 h-6" loading="lazy" />
+      <img src={icon} alt="Icon" className="w-6 h-6" />
       {children}
     </button>
   );

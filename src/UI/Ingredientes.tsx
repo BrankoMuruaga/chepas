@@ -44,7 +44,6 @@ function Ingredientes({ id }: { id: string }) {
                 className="h-14 md:h-20 2xl:h-24"
                 src={ingrediente.image}
                 alt={ingrediente.name}
-                loading="lazy"
               />
               <h2 className="text-styled text-lg">{ingrediente.name}</h2>
             </span>
