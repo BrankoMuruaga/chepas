@@ -16,13 +16,22 @@ function Navbar() {
         >
           <Menu />
         </button>
-        <img
-          id="wave-navbar-mobile"
-          src="/images/wave-logo-navbar-mobile.png"
-          className={`w-screen absolute object-cover md:hidden pointer-events-none ${
-            isOpen ? "-translate-y-[100%]" : ""
-          } transition-all duration-300 ease-in-out`}
-        />
+        <div className="relative w-full">
+          <img
+            id="wave-navbar-mobile"
+            src="/images/wave-logo-navbar-mobile.png"
+            className={`w-screen absolute object-cover md:hidden pointer-events-none ${
+              isOpen ? "-translate-y-[100%]" : ""
+            } transition-all duration-300 ease-in-out`}
+          />
+          {/* Área clickeable sobre el logo mobile */}
+          <a
+            href="#"
+            aria-label="Ir al inicio"
+            className="absolute left-8 top-2 w-20 h-16 z-20"
+            style={{ display: "block" }}
+          />
+        </div>
         <section
           className="rounded-l-2xl absolute top-0 right-0 w-2/3 h-screen bg-web-orange-400 transition-transform duration-300 ease-in-out z-50"
           style={{
@@ -55,21 +64,30 @@ function Navbar() {
         </section>
       </nav>
       <nav className="fixed top-0 w-full z-50 m-auto hidden md:block">
-        <ul className="flex justify-center items-center p-4 gap-12 text-styled text-nutmeg-wood-900">
-          {navbarItems.map((item, index) => (
-            <li key={index} className="relative group">
-              <a href={item.href} className="relative 2xl:text-xl">
-                {item.name}
-                <span className="absolute bottom-0 left-1/2 w-0 h-[2px] bg-nutmeg-wood-900 transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
-              </a>
-            </li>
-          ))}
-        </ul>
-        <img
-          id="wave-navbar"
-          src="/images/wave-logo-navbar.png"
-          className="w-screen absolute object-cover -z-10 -top-0 md:block hidden pointer-events-none"
-        />
+        <div className="relative w-full">
+          <ul className="flex justify-center items-center p-4 gap-12 text-styled text-nutmeg-wood-900">
+            {navbarItems.map((item, index) => (
+              <li key={index} className="relative group">
+                <a href={item.href} className="relative 2xl:text-xl">
+                  {item.name}
+                  <span className="absolute bottom-0 left-1/2 w-0 h-[2px] bg-nutmeg-wood-900 transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
+                </a>
+              </li>
+            ))}
+          </ul>
+          <img
+            id="wave-navbar"
+            src="/images/wave-logo-navbar.png"
+            className="w-screen absolute object-cover -z-10 -top-0 md:block hidden pointer-events-none"
+          />
+          {/* Área clickeable sobre el logo desktop */}
+          <a
+            href="#"
+            aria-label="Ir al inicio"
+            className="absolute md:left-20 2xl:left-28 top-2 md:w-32 md:h-28 2xl:w-48 2xl:h-44 z-10"
+            style={{ display: "block" }}
+          />
+        </div>
       </nav>
     </>
   );
