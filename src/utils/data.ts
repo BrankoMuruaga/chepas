@@ -33,53 +33,53 @@ export const navbarItems: NavbarItem[] = [
 
 export const ingredientes: Ingrediente[] = [
   {
-    name: "Fecula de mandioca",
-    image: "/images/fecula de mandioca.webp",
+    name: "Variedad de quesos",
+    image: "/images/queso.webp",
     descripcion:
       "La fécula de mandioca es la base de la chipa, aportando su textura característica y sabor único.",
     position: "text-center -translate-y-10 md:translate-x-20 md:-translate-y-2",
   },
   {
-    name: "Especias",
-    image: "/images/especias.webp",
+    name: "Fecula de mandioca",
+    image: "/images/fecula de mandioca.webp",
     descripcion:
       "Las especias aportan un toque especial que realza el sabor de cada bocado.",
     position:
       "text-center -translate-x-16 translate-y-10 md:translate-x-32 md:translate-y-8",
   },
   {
-    name: "Leche",
-    image: "/images/leche.webp",
+    name: "Huevo",
+    image: "/images/huevo.webp",
     descripcion: "La leche aporta suavidad y un toque de cremosidad a la masa.",
     position: "text-center md:translate-x-40 md:translate-y-4",
   },
   {
-    name: "Sal",
-    image: "/images/sal.webp",
+    name: "Manteca",
+    image: "/images/manteca.webp",
     descripcion:
       "La sal equilibra los sabores y resalta el gusto de los demás ingredientes.",
     position:
       "text-center -translate-x-16 translate-y-10 md:translate-x-24 md:translate-y-8",
   },
   {
-    name: "Polvo para hornear",
-    image: "/images/polvo para hornear.webp",
+    name: "Leche",
+    image: "/images/leche.webp",
     descripcion:
       "El polvo para hornear es un ingrediente esencial para lograr que tus chipas queden esponjosas y con la textura perfecta.",
     position:
       "text-center translate-x-24 md:-translate-x-20 md:-translate-y-10",
   },
   {
-    name: "Variedad de quesos",
-    image: "/images/queso.webp",
+    name: "Polvo para hornear",
+    image: "/images/polvo para hornear.webp",
     descripcion:
       "Los quesos seleccionados le dan a la chipa su sabor inconfundible y delicioso.",
     position: "text-center translate-y-20 md:-translate-x-6 md:translate-y-2",
   },
 
   {
-    name: "Huevo",
-    image: "/images/huevo.webp",
+    name: "Sal",
+    image: "/images/sal.webp",
     descripcion:
       "El huevo es clave para unir los ingredientes y dar estructura a la chipa.",
     position:
@@ -87,8 +87,8 @@ export const ingredientes: Ingrediente[] = [
   },
 
   {
-    name: "Manteca",
-    image: "/images/manteca.webp",
+    name: "Especias",
+    image: "/images/especias.webp",
     descripcion:
       "La manteca añade un sabor rico y ayuda a lograr una textura perfecta.",
     position:
@@ -102,6 +102,11 @@ export const pagos: Pago[] = [
     image: "/images/efectivo.webp",
     descripcion:
       "¡Podés pagar en mano, fácil y rápido, cuando recibís tu Chepa!",
+  },
+  {
+    name: "Cuenta DNI",
+    image: "/images/cuenta-dni.webp",
+    descripcion: "Pagá con tu Cuenta DNI y obtené un 20% de reintegro",
   },
   {
     name: "Mercado Pago",
@@ -157,6 +162,8 @@ export const horarios: Horario[] = [
   { name: "16:00" },
   { name: "17:00" },
   { name: "18:00" },
+  { name: "19:00" },
+  { name: "20:00" },
 ];
 
 export const generarMensajeWhatsApp = (
